@@ -14,7 +14,7 @@
 
 [![Top Langs](https://github-readme-stats-git-master-john-softichs-projects.vercel.app/api/top-langs/?username=jsoftich&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
 <!--
-[![Harlok's WakaTime stats](https://github-readme-stats-git-master-john-softichs-projects.vercel.app/api/wakatime?username=jsoftich)](https://github.com/anuraghazra/github-readme-stats)
+[![Harlok's WakaTime stats](https://github-readme-stats-git-master-john-softichs-projects.vercel.app/api/wakatime?username=jsoftich&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
 -->
 
 ### :hammer_and_wrench: Languages and Tools :
