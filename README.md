@@ -10,9 +10,9 @@
 🌎 Check out my [website](http://www.johnsoftich.com/)
 
 ### 🔥 My Github Stats 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=jsoftich&theme=gotham)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=jsoftich&theme=dark&salt=1)](https://git.io/streak-stats)
 
-[![Top Langs](https://github-readme-stats-git-master-john-softichs-projects.vercel.app/api/top-langs/?username=jsoftich&theme=gotham)](https://github.com/jsoftich/github-readme-stats)
+[![Top Langs](https://github-readme-stats-git-master-john-softichs-projects.vercel.app/api/top-langs/?username=jsoftich&theme=dark&salt=1)](https://github.com/jsoftich/github-readme-stats)
 <!--
 [![Harlok's WakaTime stats](https://github-readme-stats-git-master-john-softichs-projects.vercel.app/api/wakatime?username=jsoftich&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
 -->
