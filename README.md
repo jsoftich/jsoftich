@@ -10,7 +10,7 @@
 🌎 Check out my [website](http://www.johnsoftich.com/)
 
 ### 🔥 My Github Stats 
-[![GitHub Streak](https://johnsoftich.com/apps/github-streak/?user=jsoftich&theme=dark&salt=2)](https://git.io/streak-stats)
+[![GitHub Streak](https://johnsoftich.com/apps/github-streak/?user=jsoftich&theme=dark&salt=2)](https://github.com/jsoftich/github-readme-streak-stats)
 
 [![Top Langs](https://github-readme-stats-git-master-john-softichs-projects.vercel.app/api/top-langs/?username=jsoftich&theme=dark&langs_count=10&exclude_repo=merlin-web&salt=3)](https://github.com/jsoftich/github-readme-stats)
 <!--
