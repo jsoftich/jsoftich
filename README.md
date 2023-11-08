@@ -12,7 +12,7 @@
 ### 🔥 My Github Stats 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=jsoftich&theme=dark&salt=2)](https://git.io/streak-stats)
 
-[![Top Langs](https://github-readme-stats-git-master-john-softichs-projects.vercel.app/api/top-langs/?username=jsoftich&theme=dark&langs_count=10&hide=XSLT,Classic%20ASP,HTML,xBase&salt=3)](https://github.com/jsoftich/github-readme-stats)
+[![Top Langs](https://github-readme-stats-git-master-john-softichs-projects.vercel.app/api/top-langs/?username=jsoftich&theme=dark&langs_count=10&exclude_repo=merlin-web&salt=3)](https://github.com/jsoftich/github-readme-stats)
 <!--
 [![Harlok's WakaTime stats](https://github-readme-stats-git-master-john-softichs-projects.vercel.app/api/wakatime?username=jsoftich&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
 -->
