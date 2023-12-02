@@ -2,7 +2,7 @@ name: Cache gh-lang-stats Action
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *' # Every 4 hours, change it accordingly
+    - cron: '0 */4 * * *' # Every 4 hours, change it accordingly
 
 jobs:
   stats:
