@@ -23,7 +23,7 @@ jobs:
         id: streak
         name: Download the streak file
         with:
-          url: "https://johnsoftich.com/apps/github-streak/?user=jsoftich&theme=highcontrast&salt=1&exclude_days=Sun" # Put your own vercel instance URL here
+          url: "https://johnsoftich.com/apps/github-streak/?user=jsoftich&theme=dark&salt=1&exclude_days=Sun" # Put your own vercel instance URL here
           target: grs
           filename: streak-stats.svg # Need to have the file name prepared as svg          
       - uses: actions/upload-artifact@master
