@@ -1,4 +1,4 @@
-name: Cache gh-lang-stats Action
+name: Cache gh-lang-n-streak-stats Action
 on:
   workflow_dispatch:
   schedule:
