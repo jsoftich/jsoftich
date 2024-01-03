@@ -19,11 +19,21 @@ jobs:
           url: "https://github-readme-stats-git-master-john-softichs-projects.vercel.app/api/top-langs/?username=jsoftich&theme=dark&langs_count=10&exclude_repo=merlin-web&salt=1" # Put your own vercel instance URL here
           target: grs
           filename: lang-stats.svg # Need to have the file name prepared as svg
+      - uses: suisei-cn/actions-download-file@v1.3.0
+        id: streak
+        name: Download the streak file
+        with:
+          url: "https://johnsoftich.com/apps/github-streak/?user=jsoftich&theme=highcontrast&salt=1&exclude_days=Sun" # Put your own vercel instance URL here
+          target: grs
+          filename: streak-stats.svg # Need to have the file name prepared as svg          
       - uses: actions/upload-artifact@master
         with:
           name: stats
           path: grs
-
+      - uses: actions/upload-artifact@master
+        with:
+          name: streak
+          path: grs
   push:
     permissions: write-all
     runs-on: ubuntu-latest
@@ -34,6 +44,10 @@ jobs:
         with:
           name: stats
           path: grs
+      - uses: actions/download-artifact@master
+        with:
+          name: streak
+          path: grs          
       - name: Push
         uses: crazy-max/ghaction-github-pages@v3
         with:
