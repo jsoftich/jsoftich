@@ -1,6 +1,6 @@
 ### Hello there 👋, I'm John Softich
 
-💻 Vice President of Software Engineering at [QuieTrack - Heffernan](https://www.quietrack.com.com/)
+💻 Vice President of Software Engineering at [QuieTrack - Heffernan](https://www.quietrack.com/)
 
 ### About me:
 
