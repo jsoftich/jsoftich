@@ -16,7 +16,7 @@ jobs:
         id: stats
         name: Download the stats file
         with:
-          url: "https://githubstats.johnsoftich.me/api/top-langs/?username=jsoftich&theme=dark&langs_count=10&exclude_repo=merlin-web&salt=1" # Put your own vercel instance URL here
+          url: "https://githubstats.johnsoftich.me/api/top-langs/?username=jsoftich&theme=dark&langs_count=10&exclude_repo=merlin-web;NFS-FloodTools-Site&salt=1" # Put your own vercel instance URL here
           target: grs
           filename: lang-stats.svg # Need to have the file name prepared as svg
       - uses: suisei-cn/actions-download-file@v1.6.0
