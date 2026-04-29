@@ -3,6 +3,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 */4 * * *' # Every 4 hours, change it accordingly
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   stats:
     permissions: write-all
