@@ -3,51 +3,53 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 */4 * * *' # Every 4 hours, change it accordingly
-
 jobs:
   stats:
     permissions: write-all
     runs-on: ubuntu-latest
     name: Stats Card
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         name: Check out current commit
-      - uses: suisei-cn/actions-download-file@v1.6.0
-        id: stats
-        name: Download the stats file
-        with:
-          url: "https://githubstats.johnsoftich.me/api/top-langs/?username=jsoftich&theme=dark&langs_count=10&exclude_repo=merlin-web;NFS-FloodTools-Site&salt=1&hide=xslt,html,batchfile,xBase" # Put your own vercel instance URL here
-          target: grs
-          filename: lang-stats.svg # Need to have the file name prepared as svg
-      - uses: suisei-cn/actions-download-file@v1.6.0
-        id: streak
-        name: Download the streak file
-        with:
-          url: "https://johnsoftich.com/apps/github-streak/?user=jsoftich&theme=dark&salt=1&exclude_days=Sun" # Put your own vercel instance URL here
-          target: grs
-          filename: streak-stats.svg # Need to have the file name prepared as svg          
-      - uses: actions/upload-artifact@master
+
+      - name: Download the stats file
+        run: |
+          mkdir -p grs
+          curl -fsSL -o grs/lang-stats.svg \
+            "https://githubstats.johnsoftich.me/api/top-langs/?username=jsoftich&theme=dark&langs_count=10&exclude_repo=merlin-web;NFS-FloodTools-Site&salt=1&hide=xslt,html,batchfile,xBase"
+
+      - name: Download the streak file
+        run: |
+          mkdir -p grs
+          curl -fsSL -o grs/streak-stats.svg \
+            "https://johnsoftich.com/apps/github-streak/?user=jsoftich&theme=dark&salt=1&exclude_days=Sun"
+
+      - uses: actions/upload-artifact@v4
         with:
           name: stats
-          path: grs
-      - uses: actions/upload-artifact@master
+          path: grs/lang-stats.svg
+
+      - uses: actions/upload-artifact@v4
         with:
           name: streak
-          path: grs
+          path: grs/streak-stats.svg
+
   push:
     permissions: write-all
     runs-on: ubuntu-latest
     name: Push
     needs: [stats] # Put any jobs (card) needed here before we push
     steps:
-      - uses: actions/download-artifact@master
+      - uses: actions/download-artifact@v4
         with:
           name: stats
           path: grs
-      - uses: actions/download-artifact@master
+
+      - uses: actions/download-artifact@v4
         with:
           name: streak
-          path: grs          
+          path: grs
+
       - name: Push
         uses: crazy-max/ghaction-github-pages@v4
         with:
