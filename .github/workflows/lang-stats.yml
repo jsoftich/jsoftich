@@ -53,7 +53,7 @@ jobs:
           path: grs
 
       - name: Push
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: resource/grs # May change to your desired branch name, the final URL need to be updated if you change this
           build_dir: grs
